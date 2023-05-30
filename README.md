@@ -4,4 +4,5 @@ Indonesia has at least 700 traditional languages, with Javanese and Sundanese be
 1. How to preserve Indonesian traditional languages from extinction?
 2. How to create a fun and comprehensive curriculum that could provide the best experience in learning traditional languages?
 3. How can the problem statement be resolved with current technology?
+
 Our team is motivated to solve this issue because we want to preserve our traditional languages by making it simpler and give a fun experience for individuals to learn about various traditional Indonesian languages. Our objective is to create a language-learning app that provides the greatest learning platform for Indonesian traditional language.
