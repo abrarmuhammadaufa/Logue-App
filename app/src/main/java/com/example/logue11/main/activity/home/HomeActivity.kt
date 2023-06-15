@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import com.example.logue11.databinding.ActivityHomeBinding
 import com.example.logue11.main.activity.profile.ProfileActivity
+import com.example.logue11.main.activity.sunda.SundaActivity
 import com.example.logue11.main.sharedpreferences.UserPreference
 
 class HomeActivity : AppCompatActivity() {
@@ -27,10 +28,18 @@ class HomeActivity : AppCompatActivity() {
         binding.ivProfile.setOnClickListener {
             startActivity(Intent(this@HomeActivity, ProfileActivity::class.java))
         }
+
+        binding.ivSundaForward.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, SundaActivity::class.java))
+        }
+
+        binding.ivJawaForward.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, SundaActivity::class.java))
+        }
+
     }
 
-    fun getUsername() {
+    private fun getUsername() {
         binding.tvUsername.text = userPreference.getFullName()
     }
-
 }

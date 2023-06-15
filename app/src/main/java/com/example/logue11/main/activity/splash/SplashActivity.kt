@@ -1,4 +1,4 @@
-package com.example.logue11.main.activity
+package com.example.logue11.main.activity.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent

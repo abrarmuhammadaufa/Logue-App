@@ -23,7 +23,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="greet">Halo!</string>
+    <string name="greet">Halo,</string>
     <string name="nama_akun">Nama Akun</string>
     <string name="terjemahan">Terjemahan</string>
     <string name="kata">Kata</string>
@@ -31,6 +31,12 @@
     <string name="profile_edit">Ubah Profil</string>
     <string name="password_edit">Ubah Kata Sandi</string>
     <string name="about_us">Tentang Kami</string>
+    <string name="home_welcome">Mau belajar apa hari ini?</string>
+    <string name="language">Bahasa</string>
+    <string name="basa_sunda">Basa Sunda</string>
+    <string name="bahasa_sunda">Bahasa Sunda</string>
+    <string name="basa_jawa">Basa Jawa</string>
+    <string name="bahasa_jawa">Bahasa Jawa</string>
 
     <string-array name="word_one">
         <item>Abdi</item>
