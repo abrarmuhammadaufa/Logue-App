@@ -82,8 +82,7 @@ jwt = JWTManager(app)
 # Intialize MySQL
 mysql = init(app)
 
-with keras.utils.custom_object_scope({'CTCLoss': CTCLoss}):
-    model = load_model('model.h5')
+model = load_model('./model.h5', compile=False)
 
 @app.route("/")
 def index():
@@ -146,4 +145,4 @@ def loginAccount():
         return err
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8081)))
