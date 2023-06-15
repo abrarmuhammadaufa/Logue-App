@@ -69,6 +69,10 @@ app = Flask(__name__)
 with keras.utils.custom_object_scope({'CTCLoss': CTCLoss}):
     model = keras.models.load_model('model.h5')
 
+@app.route("/")
+def index():
+  return "Hello from ML Endpoint!"
+    
 @app.route("/predict", methods=["POST"])
 def predict():
     file = request.files['file']
