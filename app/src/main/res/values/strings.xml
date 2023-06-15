@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Logue</string>
+    <string name="logue_logo">LOGUE</string>
+    <string name="login">Masuk</string>
+    <string name="welcome">Selamat Datang!!</string>
+    <string name="create_an_account">Buat Akun Baru</string>
+    <string name="username">Username</string>
+    <string name="password">Kata Sandi</string>
+    <string name="email">Email</string>
+    <string name="register">Daftar</string>
+    <string name="don_t_have_an_account">Belum memiliki akun?</string>
+    <string name="already_have_an_account">Sudah memiliki akun?</string>
+    <string name="login_account">Masuk Akun</string>
+    <string name="welcome_back">selamat datang kembali!!</string>
+    <string name="fullname">Nama Lengkap</string>
+    <string name="logo">logo</string>
+    <string name="template">lorem ipsum dolor sit amet consecteteur adipiscing elit</string>
+    <string name="tampilkan_password">Tampilkan Password</string>
+    <string name="belajar_bahasa_lokal_dengan_mudah">Belajar bahasa lokal, dengan mudah</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="greet">Halo!</string>
+    <string name="nama_akun">Nama Akun</string>
+    <string name="terjemahan">Terjemahan</string>
+    <string name="kata">Kata</string>
+
+    <string-array name="word_one">
+        <item>Abdi</item>
+        <item>Aki</item>
+        <item>Anjeun</item>
+        <item>Anjeunna</item>
+        <item>Awéwé</item>
+        <item>Bapa</item>
+        <item>Budak</item>
+        <item>Indung</item>
+        <item>Kolot</item>
+        <item>Lalaki</item>
+        <item>Nami</item>
+        <item>Nini</item>
+        <item>Téh</item>
+    </string-array>
+
+    <string-array name="translate_one">
+        <item>Saya</item>
+        <item>Kakek</item>
+        <item>Kamu</item>
+        <item>Dia</item>
+        <item>Perempuan</item>
+        <item>Ayah</item>
+        <item>Anak</item>
+        <item>Ibu</item>
+        <item>Orangtua</item>
+        <item>Laki-laki</item>
+        <item>Nama</item>
+        <item>Nenek</item>
+        <item>Adalah</item>
+    </string-array>
+
+    <integer-array name="voice_one">
+        <item>@raw/abdi</item>
+        <item>@raw/aki</item>
+        <item>@raw/anjeun</item>
+        <item>@raw/anjeunna</item>
+        <item>@raw/awewe</item>
+        <item>@raw/bapa</item>
+        <item>@raw/budak</item>
+        <item>@raw/indung</item>
+        <item>@raw/kolot</item>
+        <item>@raw/lalaki</item>
+        <item>@raw/nami</item>
+        <item>@raw/nini</item>
+        <item>@raw/teh</item>
+    </integer-array>
+
+</resources>

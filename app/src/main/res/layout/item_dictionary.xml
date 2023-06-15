@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/times"
+            android:text="@string/kata"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_translation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/times"
+            android:text="@string/terjemahan"
+            android:textSize="20sp"
+            android:textColor="@color/gray_200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_voice"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_voice_dictionary"
+            android:contentDescription="@string/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
