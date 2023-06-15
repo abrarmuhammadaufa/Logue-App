@@ -67,7 +67,7 @@ def preprocess_audio(upload_file):
 app = Flask(__name__)
 
 with keras.utils.custom_object_scope({'CTCLoss': CTCLoss}):
-    model = keras.models.load_model('model.h5')
+    model = load_model('model.h5')
 
 @app.route("/")
 def index():
