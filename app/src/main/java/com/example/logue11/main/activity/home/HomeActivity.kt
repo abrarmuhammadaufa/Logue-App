@@ -1,9 +1,11 @@
 package com.example.logue11.main.activity.home
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import androidx.appcompat.app.AppCompatActivity
 import com.example.logue11.databinding.ActivityHomeBinding
+import com.example.logue11.main.activity.profile.ProfileActivity
 import com.example.logue11.main.sharedpreferences.UserPreference
 
 class HomeActivity : AppCompatActivity() {
@@ -21,6 +23,10 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         getUsername()
+
+        binding.ivProfile.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, ProfileActivity::class.java))
+        }
     }
 
     fun getUsername() {

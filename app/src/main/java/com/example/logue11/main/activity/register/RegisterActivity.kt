@@ -54,7 +54,7 @@ class RegisterActivity : AppCompatActivity() {
 
         val emailcheck = binding.edRegEmail.text.toString()
 
-        if (binding.edRegFullname.text.isEmpty()){
+        if (binding.edRegFullname.text.isEmpty() || binding.edRegFullname.text.length > 20){
             binding.edRegFullname.error = "Mohon isi nama lengkap"
             binding.edRegFullname.requestFocus()
             return

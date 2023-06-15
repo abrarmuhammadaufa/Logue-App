@@ -8,6 +8,7 @@
     <string name="password">Kata Sandi</string>
     <string name="email">Email</string>
     <string name="register">Daftar</string>
+    <string name="logout">Keluar</string>
     <string name="don_t_have_an_account">Belum memiliki akun?</string>
     <string name="already_have_an_account">Sudah memiliki akun?</string>
     <string name="login_account">Masuk Akun</string>
@@ -26,6 +27,10 @@
     <string name="nama_akun">Nama Akun</string>
     <string name="terjemahan">Terjemahan</string>
     <string name="kata">Kata</string>
+    <string name="notification">Notifikasi</string>
+    <string name="profile_edit">Ubah Profil</string>
+    <string name="password_edit">Ubah Kata Sandi</string>
+    <string name="about_us">Tentang Kami</string>
 
     <string-array name="word_one">
         <item>Abdi</item>

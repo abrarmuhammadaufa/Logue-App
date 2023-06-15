@@ -37,7 +37,22 @@ internal class UserPreference(context: Context) {
         return preferences.getBoolean(STATUS,false)
     }
 
+    fun removeUser() {
+        val editor = preferences.edit()
+        editor.clear()
+        editor.apply()
+    }
+
     fun getFullName(): String? {
         return preferences.getString(FULLNAME, "")
     }
+
+    fun getUsername(): String? {
+        return preferences.getString(USERNAME, "")
+    }
+
+    fun getEmail(): String? {
+        return preferences.getString(EMAIL, "")
+    }
+
 }
