@@ -5,6 +5,12 @@ from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import load_model
 from flask import Flask, jsonify, request
+from db import init, register, login, checkAccount
+from flask_mysqldb import MySQL
+from flask_cors import CORS
+from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required, JWTManager
+from datetime import timedelta
+from waitress import serve
 
 # The set of characters accepted in the transcription
 characters = [x for x in "abcdefghijklmnopqrstuvwxyz'?! "]
@@ -64,7 +70,17 @@ def preprocess_audio(upload_file):
     return spectrogram
 
 
+# Initialize Flask
 app = Flask(__name__)
+CORS(app)
+
+# Initialize JWT
+app.config['SECRET_KEY'] = 'loguesecretkey'
+app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(days=30)
+jwt = JWTManager(app)
+
+# Intialize MySQL
+mysql = init(app)
 
 with keras.utils.custom_object_scope({'CTCLoss': CTCLoss}):
     model = load_model('model.h5')
@@ -87,6 +103,47 @@ def predict():
         return jsonify({"predictions": decoded_predictions})
     except:
         return jsonify({'error': str(e)})
+
+# App Registration
+@app.route('/register', methods=['POST'])
+def registerAccount():
+    fullname = request.form['fullname']
+    username = request.form['username']
+    email = request.form['email']
+    password = request.form['password']
+    try:
+        return register(mysql, fullname, username, email, password)
+    except Exception as e:
+        err = jsonify(msg=f'{e}'), 500
+        return err
+    
+# Acoount Check
+@app.route('/account',methods=['GET'])
+def accounts():
+    try:
+        return jsonify(checkAccount(mysql))
+    except Exception as e:
+        err = jsonify(msg=f'{e}'),500
+        return err
+
+# App Login
+@app.route('/login', methods=['POST'])
+def loginAccount():
+    username = request.form['username']
+    password = request.form['password']
+    try:
+        account = login(mysql, username, password)
+        if account != "":
+            access_token = create_access_token(identity=username)
+            return jsonify({
+                "message": "Login Successful",
+                "user": account,
+                "access_token": access_token
+            }),200
+        return jsonify({"msg": "Wrong Username or Password"}), 401
+    except Exception as e:
+        err = jsonify(msg=f'{e}'),500
+        return err
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
