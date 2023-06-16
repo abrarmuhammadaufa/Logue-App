@@ -29,7 +29,7 @@ Tools and Libraries that we are using as follows:
 # How to replicate
 
 ## Mobile Development
-1. Download the project in Github
+1. Clone the project in Github using `git clone -b Frontend https://github.com/abrarmuhammadaufa/Logue-App.git`
 2. Open the project app in Android Studio
 3. Add all the required libraries for the app
 4. Build and run the project
