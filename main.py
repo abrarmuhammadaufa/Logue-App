@@ -11,10 +11,11 @@ from flask_cors import CORS
 from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required, JWTManager
 from datetime import timedelta
 from waitress import serve
+import urllib.request
 
-import subprocess
-if not os.path.isfile('model.h5'):
-    subprocess.run(['curl --output model.h5 "https://github.com/abrarmuhammadaufa/Logue-App/raw/Backend/h5_model1.h5"'], shell=True)
+#import subprocess
+#if not os.path.isfile('model.h5'):
+    #subprocess.run(['curl --output model.h5 "https://github.com/abrarmuhammadaufa/Logue-App/raw/Backend/h5_model1.h5"'], shell=True)
 
 # The set of characters accepted in the transcription
 characters = [x for x in "abcdefghijklmnopqrstuvwxyz'?! "]
@@ -87,6 +88,8 @@ jwt = JWTManager(app)
 mysql = init(app)
 
 #model = load_model('./model.h5', compile=False)
+model_url = ''
+urllib.request.urlretrieve(model_url, 'model.h5')
 model = tf.keras.models.load_model('model.h5', compile=False)
 
 @app.route("/")
