@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.logue11.databinding.ActivityHomeBinding
 import com.example.logue11.main.activity.profile.ProfileActivity
 import com.example.logue11.main.activity.sunda.SundaActivity
+import com.example.logue11.main.activity.tba.OnProgressActivity
 import com.example.logue11.main.sharedpreferences.UserPreference
 
 class HomeActivity : AppCompatActivity() {
@@ -34,7 +35,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         binding.ivJawaForward.setOnClickListener {
-            startActivity(Intent(this@HomeActivity, SundaActivity::class.java))
+            startActivity(Intent(this@HomeActivity, OnProgressActivity::class.java))
         }
 
     }

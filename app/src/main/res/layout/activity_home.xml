@@ -11,7 +11,7 @@
         android:id="@+id/iv_foreground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="132dp"
         android:layout_marginBottom="-64dp"
         android:src="@drawable/fg_white_foreground"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,6 +45,32 @@
         android:textColor="@color/gray_700"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_greet" />
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="XP kamu: "
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        android:textColor="@color/orange_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <TextView
+        android:id="@+id/tv_xp_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="0 pts"
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        android:textColor="@color/gray_700"
+        app:layout_constraintStart_toEndOf="@+id/tv_point"
+        app:layout_constraintTop_toTopOf="@+id/tv_point" />
 
     <ImageView
         android:id="@+id/iv_profile"

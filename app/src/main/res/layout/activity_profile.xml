@@ -98,6 +98,7 @@
                 tools:ignore="UseCompoundDrawables">
 
                 <LinearLayout
+                    android:id="@+id/ll_edit_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -122,6 +123,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll_edit_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -147,6 +149,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll_notification"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -190,6 +193,7 @@
             app:layout_constraintTop_toBottomOf="@+id/cd_profile">
 
             <LinearLayout
+                android:id="@+id/ll_about_us"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"

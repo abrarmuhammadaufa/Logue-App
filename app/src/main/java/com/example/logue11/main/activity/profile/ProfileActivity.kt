@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import com.example.logue11.databinding.ActivityProfileBinding
+import com.example.logue11.main.activity.tba.OnProgressActivity
 import com.example.logue11.main.activity.welcome.WelcomeActivity
 import com.example.logue11.main.sharedpreferences.UserPreference
 
@@ -24,6 +25,28 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         getProfile()
+
+        val comingSoon = Intent(this, OnProgressActivity::class.java)
+
+        binding.llEditProfile.setOnClickListener {
+            startActivity(comingSoon)
+            finish()
+        }
+
+        binding.llEditPassword.setOnClickListener {
+            startActivity(comingSoon)
+            finish()
+        }
+
+        binding.llNotification.setOnClickListener {
+            startActivity(comingSoon)
+            finish()
+        }
+
+        binding.llAboutUs.setOnClickListener {
+            startActivity(comingSoon)
+            finish()
+        }
 
         binding.btnLogout.setOnClickListener {
             userPreference.removeUser()

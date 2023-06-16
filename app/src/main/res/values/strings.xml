@@ -37,6 +37,18 @@
     <string name="bahasa_sunda">Bahasa Sunda</string>
     <string name="basa_jawa">Basa Jawa</string>
     <string name="bahasa_jawa">Bahasa Jawa</string>
+    <string name="coming_soon">Segera Hadir!</string>
+    <string name="coming_soon_desc">Kami akan meluncurkan fitur ini segera!</string>
+    <string name="notify_me">Kabari saya</string>
+    <string name="unit_1_sunda">Bab 1: Mengenal Keluarga</string>
+    <string name="unit_2_sunda">Bab 2: Menyapa Orang Lain</string>
+    <string name="very_easy">Sangat Mudah</string>
+    <string name="easy">Mudah</string>
+    <string name="normal">Sedang</string>
+    <string name="hard">Sulit</string>
+    <string name="difficulty">Kesulitan:</string>
+    <string name="vocab">Kosakata</string>
+    <string name="vocab_desc">Pelajari kosakata dulu!</string>
 
     <string-array name="word_one">
         <item>Abdi</item>
