@@ -35,7 +35,7 @@ Tools and Libraries that we are using as follows:
 4. Build and run the project
 
 ## Machine Learning & Cloud Computing
-API and model have been deployed using CLoud Run `https://backend-logue-api-xbzastwrxq-et.a.run.app/`
+API and model have been deployed using Cloud Run `https://backend-logue-api-xbzastwrxq-et.a.run.app/`
 
 Run in local:
 1. Clone the project in Github using `git clone -b Backend https://github.com/abrarmuhammadaufa/Logue-App.git`
