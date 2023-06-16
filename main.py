@@ -89,8 +89,8 @@ mysql = init(app)
 
 #model = load_model('./model.h5', compile=False)
 model_url = ''
-urllib.request.urlretrieve(model_url, 'model.h5')
-model = tf.keras.models.load_model('model.h5', compile=False)
+urllib.request.urlretrieve(model_url, 'h5_model1.h5')
+model = tf.keras.models.load_model('h5_model1.h5', compile=False)
 
 @app.route("/")
 def index():
