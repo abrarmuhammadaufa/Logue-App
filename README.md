@@ -7,14 +7,14 @@ Indonesia has at least 700 traditional languages, with Javanese and Sundanese be
 
 Our team is motivated to solve this issue because we want to preserve our traditional languages by making it simpler and give a fun experience for individuals to learn about various traditional Indonesian languages. Our objective is to create a language-learning app that provides the greatest learning platform for Indonesian traditional language.
 
-#Technology
+# Technology
 
 Tools and Libraries that we are using as follows:
 *Tools: Android Studio Electric Eel 2022.1.1 and Figma
 *Language: Kotlin
 *Libraries: Splashscreen, Retrofit, Okhttp, and ViewBinding
 
-#How to replicate
+# How to replicate
 
 1. Download the project in Github
 2. Open the project app in Android Studio
