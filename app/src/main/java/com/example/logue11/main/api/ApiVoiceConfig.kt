@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 object ApiVoiceConfig {
-    private const val BASE_URL = "https://coba-l7l2hq4rua-et.a.run.app/"
+    private const val BASE_URL = "https://backend-logue-api-xbzastwrxq-et.a.run.app/"
     private val client: Retrofit
         get(){
             val gson = GsonBuilder()
@@ -20,9 +20,9 @@ object ApiVoiceConfig {
 
             val client: OkHttpClient = OkHttpClient.Builder()
                 .addInterceptor(interceptor)
-                .connectTimeout(30, TimeUnit.SECONDS)
-                .readTimeout(30, TimeUnit.SECONDS)
-                .writeTimeout(30, TimeUnit.SECONDS)
+                .connectTimeout(60, TimeUnit.SECONDS)
+                .readTimeout(60, TimeUnit.SECONDS)
+                .writeTimeout(60, TimeUnit.SECONDS)
                 .build()
 
             return Retrofit.Builder()
@@ -32,6 +32,6 @@ object ApiVoiceConfig {
                 .build()
         }
 
-    val instanceRetrofit: ApiService
-        get() = client.create(ApiService::class.java)
+    val instanceVoiceRetrofit: ApiVoiceService
+        get() = client.create(ApiVoiceService::class.java)
 }

@@ -52,6 +52,7 @@
     <string name="progress_belajar">Progress belajar:</string>
     <string name="latihan_berbicara_yuk">Latihan berbicara yuk!</string>
     <string name="press_button">tekan tombol mic untuk rekam suaramu!</string>
+    <string name="instruction_speaking">Coba sebutkan kata berikut:</string>
 
     <string-array name="word_one">
         <item>Abdi</item>

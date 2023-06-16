@@ -21,7 +21,7 @@ class DictionaryActivity : AppCompatActivity() {
         binding = ActivityDictionaryBinding.inflate(LayoutInflater.from(this))
 
         setContentView(binding.root)
-        supportActionBar?.title=("Vocabulary")
+        supportActionBar?.title=("Vocabulary Bab 1")
 
         list.addAll(getWordList())
         showRecyclerView()

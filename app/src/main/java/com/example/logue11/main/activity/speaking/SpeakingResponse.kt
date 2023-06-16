@@ -5,6 +5,6 @@ import com.google.gson.annotations.SerializedName
 data class SpeakingResponse(
 
     @field:SerializedName("predictions")
-    val predictions: String
+    val predictions: String? = null
 
 )
