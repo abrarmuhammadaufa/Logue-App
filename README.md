@@ -11,13 +11,35 @@ Our team is motivated to solve this issue because we want to preserve our tradit
 
 Tools and Libraries that we are using as follows:
 
+## Mobile Development
 * Tools: Android Studio Electric Eel 2022.1.1 and Figma
 * Language: Kotlin
 * Libraries: Splashscreen, Retrofit, Okhttp, and ViewBinding
 
+## Machine Learning
+* Tools: Jupyter Notebook, VS Code, and Colab
+* Language: Python
+* Libraries: numpy, tensorflow, jiwer, pandas, and Flask
+
+## Cloud Computing
+* Tools: Visual Studio Code and Google Cloud Platform
+* Language: Python
+* Libraries: Flask, Flask-JWT-Extended, Flask-Cors, Flask-MySQLdb, Jinja2, and Werkzeug
+
 # How to replicate
 
+## Mobile Development
 1. Download the project in Github
 2. Open the project app in Android Studio
 3. Add all the required libraries for the app
 4. Build and run the project
+
+## Machine Learning & Cloud Computing
+API and model have been deployed using CLoud Run `https://backend-logue-api-xbzastwrxq-et.a.run.app/`
+
+Run in local:
+1. Clone the project in Github using `git clone -b Backend https://github.com/abrarmuhammadaufa/Logue-App.git`
+2. Create venv in terminal using `python -m venv env`
+4. Install the requirements `pip install -r requirements.txt`
+5. Run `python main.app`
+6. Use url `http://127.0.0.1/` to access
