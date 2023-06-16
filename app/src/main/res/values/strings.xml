@@ -47,8 +47,11 @@
     <string name="normal">Sedang</string>
     <string name="hard">Sulit</string>
     <string name="difficulty">Kesulitan:</string>
-    <string name="vocab">Kosakata</string>
+    <string name="vocab">Vocabulary</string>
     <string name="vocab_desc">Pelajari kosakata dulu!</string>
+    <string name="progress_belajar">Progress belajar:</string>
+    <string name="latihan_berbicara_yuk">Latihan berbicara yuk!</string>
+    <string name="press_button">tekan tombol mic untuk rekam suaramu!</string>
 
     <string-array name="word_one">
         <item>Abdi</item>
