@@ -10,6 +10,7 @@ Our team is motivated to solve this issue because we want to preserve our tradit
 # Technology
 
 Tools and Libraries that we are using as follows:
+
 *Tools: Android Studio Electric Eel 2022.1.1 and Figma
 *Language: Kotlin
 *Libraries: Splashscreen, Retrofit, Okhttp, and ViewBinding
